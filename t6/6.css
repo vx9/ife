@@ -1,0 +1,307 @@
+body{
+    background:dimgrey;
+    font-family: "微软雅黑";
+    margin:0;
+    padding:0;
+}
+.body{
+    height:1380px;
+    width:900px;
+    margin:0 auto;
+    /*top:50%;*/
+    /*left:50%;*/
+    /*margin-top:-690px;*/
+    /*margin-left:-490px;*/
+    /*transform:translate(-50%,-50%);*/
+    background:white;
+    padding:0 80px;
+
+}
+header {
+    height:61px;
+    position:relative;
+    border-bottom:2px solid gray;
+    font-size:12px;
+    font-family: "黑体";
+}
+header .logo{
+    /*float:left;*/
+    position: relative;
+    height:61px;
+    width:110px;
+    color:white;
+    background: #d70000;
+
+}
+header .logo span{
+
+    text-align: center;
+    position:absolute;
+    left:0;right:0;bottom:0;
+    /*background: #d7cc90;*/
+}
+header .time{
+    position:absolute;
+    right:0;
+    bottom:0;
+    color: #dd0000;
+}
+/*主体部分*/
+article,section{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+.pic{
+    height:301px;
+    /*border:solid 2px red;*/
+    position:relative;
+    margin:40px 0;
+}
+#bckg{
+    height:301px;
+    width:641px;
+    background:url(image/1.png) center center no-repeat;
+
+}
+#left{
+    height:301px;
+    width:191px;
+    float:left;
+    background:greenyellow;
+    filter:alpha(Opacity=40);-moz-opacity:0.4;opacity: 0.4
+}
+#right{
+    height:301px;
+    width:191px;
+    float:right;
+    background:orangered;
+    filter:alpha(Opacity=40);-moz-opacity:0.4;opacity: 0.4
+}
+.ab{
+    position:absolute;
+    top:0;
+    right:0;
+    width:203px;
+    border-top:solid 2px #cc8091;
+    line-height: 0;
+}
+
+.pic p:nth-child(1), .pic p:nth-child(2){
+    font-size:24px;
+    text-decoration: underline ;
+
+}
+.pic p:nth-child(1):first-letter ,.pic p:nth-child(2):first-letter {
+    color:#000;
+    font-weight:bold;
+    font-size: 30px;
+
+}
+.pic p:nth-child(3){
+    font-size:12px;
+    font-family:"楷体";
+    line-height: 10px;
+    color:#676767;
+
+
+}
+.pic p:nth-child(4){
+    font-size:100px;
+    color:#75b86b;
+    transform:skew(-20deg);
+    margin-top: 70px;
+
+}
+.pic p:nth-child(5){
+    float:left;
+    font-size:55px;
+    color:#cc8091;
+    margin-top: 10px;
+
+}
+.pic p:nth-child(6){
+    font-size:21px;
+    color:#cc8091;
+    /*???如何设置自身与上面有一定距离*/
+}
+.pic p:nth-child(7){
+    font-size:12px;
+    color:#cc8091;
+
+}
+.techDes{
+    float:left;
+    width:100%;
+    /*以上两项设置为了下面一个区域可以自动换行*/
+    margin-bottom:80px;
+
+}
+.techDes div{
+    width:200px;
+    float:left;
+    margin-right:10px;
+
+}
+.techDes div>span{
+    font-weight: bold;
+    font-size:16px;
+    text-decoration:underline;
+    text-transform:capitalize;
+}
+.techDes div:first-of-type span{
+    color:green;
+}
+.techDes div:nth-child(2) span{
+    color:red;
+}
+.techDes div:nth-child(3)>span{
+    color:purple;
+}
+.techDes div:nth-child(3) p{
+    /*????希望能把最后百分比那里行与行间距变小，下面可以，但是为什么*/
+    margin-bottom: -12px;
+}
+.techDes div:nth-child(3) p:nth-child(3){
+    margin-top:30px;
+}
+.techDes div:nth-child(3) p span{
+    display:inline-block;
+    /*只有设置了块级或者块级内联元素才能使用transform*/
+    transform:skew(-20deg);
+    font-size:12px;
+    color:red;
+    margin:0;
+}
+.techDes div p{
+    font-size:12px;
+    margin:0;
+    padding:0;
+}
+/*主体部分,下半部分*/
+article{
+    overflow:auto;
+}
+.t{
+    width:400px;
+    float:left;
+}
+.t div:nth-child(1) {
+
+    width:100%;
+    color:#11458b;
+    font-family:"黑体";
+    font-weight:bold;
+    text-transform: uppercase;
+    /*line-height:0px;*/
+    border-bottom:solid 2px #11458b;
+}
+.t div:nth-child(1) p:nth-child(1){
+    font-size:32px;
+    margin-top:0;
+    border:solid red 2px;
+    /*line-height:40px;*/
+}
+.t div:nth-child(1) p>span{
+    color: #eaf237;
+    font-size:60px;
+    font-style:italic;
+    padding-right:20px;
+}
+
+.t div:nth-child(1) p:last-child{
+    font-size:23px;
+    border:solid red 2px;
+    margin-top:-20px;/*？？为了上下居中 为什么*/
+}
+.t div:nth-child(2) {
+    width:100%;
+    font-size:12px;
+    line-height:16px;/*?为什么p p之间还有空隙*/
+
+}
+.t div:nth-child(2) p:first-child:first-letter {
+    float:left;
+    font-size:70px;
+    color:yellow;
+}
+.t div:nth-child(2) img{
+    height:300px;
+    width:200px;
+   float:right;
+}
+.t2{
+    float:right;
+    width:458px;
+}
+.t2>div:first-child{
+    position:relative;
+    width:100%;
+    height:275px;
+    background:url(image/1.png) center center ;
+    /*border:solid blue 5px;*/
+
+}
+.t2 div:first-child .blak{/*？？？为什么直接.blak不行呢？？*/
+    position:absolute;
+    bottom:0;left:0;
+    height:50px;
+    width:458px;
+    background:black;
+    filter:alpha(Opacity=40);-moz-opacity:0.4;opacity: 0.4;
+    border:solid blue 5px;
+
+}
+.t2 div:first-child p{
+    position:absolute;
+    bottom:-20px;left:0;/*？？？为什么定位不能是0 0呢？*/
+    height:50px;
+    line-height:50px;
+    font-size:20px;
+    color:white;
+    margin-left:10px;
+    border:solid red 2px;
+}
+.t2 div:first-child p span{
+    font-size:12px;
+    font-style:italic;
+    color:yellow;
+    margin-left:10px;
+}
+.t23{
+    float:right;
+    height:278px;
+    width:100%;
+    margin-top:10px;
+    background: #d7cc90;
+
+}
+.t23 div:nth-child(1){/*？？为什么第一个div字没有显示出来？错位了因为上一个position：relative缘故？*/
+    height:110px;
+    font-size:12px;
+    line-height:20px;
+    margin-top:60px;
+    border:solid blue 5px;
+}
+.t23 div:nth-child(2) {
+    height:140px;
+    width:260px;
+    float:left;
+    background:indianred;
+
+}
+.t23 div:nth-child(2) p:first-child{
+
+    margin:5px;
+    width:60px;
+    height:100px;
+    padding-left:10px;
+    font-size:80px;
+    color:white;
+    border-right:solid white 2px;
+}
+.t23 div:nth-child(2) p:nth-child(2){
+    font-size:20px;
+    font-style:italic;
+    text-transform:uppercase;
+}
